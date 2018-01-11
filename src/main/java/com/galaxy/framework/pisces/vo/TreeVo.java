@@ -9,7 +9,7 @@ import java.util.Map;
 
 @Setter
 @Getter
-public class TreeVo extends Vo implements Serializable {
+public class TreeVo implements Serializable {
 
     private String id;
 

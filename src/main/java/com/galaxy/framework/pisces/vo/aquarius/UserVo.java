@@ -1,6 +1,6 @@
 package com.galaxy.framework.pisces.vo.aquarius;
 
-import com.galaxy.framework.pisces.vo.Vo;
+import com.galaxy.framework.pisces.vo.EntityVo;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,10 +10,8 @@ import java.util.Date;
 
 @Setter
 @Getter
-public class UserVo extends Vo implements Serializable {
+public class UserVo extends EntityVo implements Serializable {
     private static final long serialVersionUID = -6290826770540342881L;
-
-    private Long id;
 
     private String code;
 
@@ -44,16 +42,4 @@ public class UserVo extends Vo implements Serializable {
 
     // 兼职岗位
     private Collection<PositionVo> positionVos;
-
-    private String status;
-
-    private String creator;
-
-    private Date created;
-
-    private String modifier;
-
-    private Date modified;
-
-    private int version = 0;
 }
