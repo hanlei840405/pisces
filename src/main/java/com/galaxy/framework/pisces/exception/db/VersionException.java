@@ -1,4 +1,4 @@
-package com.galaxy.framework.pisces.db;
+package com.galaxy.framework.pisces.exception.db;
 
 
 import com.galaxy.framework.pisces.exception.ExceptionConstant;

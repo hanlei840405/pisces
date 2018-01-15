@@ -26,6 +26,8 @@ public class DepartmentVo extends EntityVo implements Serializable {
     // 上级部门
     private DepartmentVo departmentVo;
 
+    private LocationVo locationVo;
+
     // 本部门下的岗位信息
     private Collection<PositionVo> positionVos;
 }
