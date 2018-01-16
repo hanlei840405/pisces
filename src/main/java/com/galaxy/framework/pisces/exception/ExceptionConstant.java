@@ -9,12 +9,14 @@ public interface ExceptionConstant {
             public final static String RULE = "1000";
             public final static String EMPTY = "1001";
             public final static String GRAMMAR = "1002";
+            public final static String NOT_EMPTY = "1003";
         }
 
         class Message {
             public final static String RULE = "业务规则异常";
             public final static String EMPTY = "参数为空";
             public final static String GRAMMAR = "语法错误异常";
+            public final static String NOT_EMPTY = "数据不为空异常";
         }
     }
 
