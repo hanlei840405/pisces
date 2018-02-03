@@ -1,15 +1,14 @@
 package com.galaxy.framework.pisces.vo.aquarius;
 
-import com.galaxy.framework.pisces.vo.EntityVo;
+import com.galaxy.framework.pisces.vo.BaseVo;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.util.Date;
 
 @Setter
 @Getter
-public class PositionVo extends EntityVo implements Serializable {
+public class PositionVo extends BaseVo implements Serializable {
     private static final long serialVersionUID = 573452572222497588L;
 
     private String code;

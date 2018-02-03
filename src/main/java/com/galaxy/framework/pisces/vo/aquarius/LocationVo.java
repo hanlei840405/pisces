@@ -1,6 +1,6 @@
 package com.galaxy.framework.pisces.vo.aquarius;
 
-import com.galaxy.framework.pisces.vo.EntityVo;
+import com.galaxy.framework.pisces.vo.BaseVo;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,7 +13,7 @@ import java.util.List;
  */
 @Setter
 @Getter
-public class LocationVo extends EntityVo implements Serializable {
+public class LocationVo extends BaseVo implements Serializable {
 
     private String code;
 

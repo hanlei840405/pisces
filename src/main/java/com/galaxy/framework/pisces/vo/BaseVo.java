@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Setter
 @Getter
-public class EntityVo implements Serializable {
+public class BaseVo implements Serializable {
     private static final long serialVersionUID = 5749319116884568790L;
     private String status;
     private String creator;
