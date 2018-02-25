@@ -24,5 +24,5 @@ public class BaseEntity implements Serializable {
 
     private Date modified;
 
-    private int version = 0;
+    private Integer version;
 }

@@ -12,7 +12,15 @@ import java.util.Properties;
 
 public class FileUtil {
 
-    public static String writeFromBase64(String source, String target) throws IOException {
+    /**
+     * 64位图片写入存储s
+     * @param source
+     * @param category
+     * @param target
+     * @return
+     * @throws IOException
+     */
+    public static String writeFromBase64(String source, String category, String target) throws IOException {
         String header = source.split(",")[0];
         String image = source.split(",")[1];
         String info = header.split(";")[0];
@@ -21,7 +29,7 @@ public class FileUtil {
         Properties props = System.getProperties();
         byte[] imageByte = Base64.decodeBase64(image);
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(imageByte);
-        Path rootLocation = Paths.get(props.getProperty("user.home") + "/");
+        Path rootLocation = Paths.get(props.getProperty("user.home") + "/" + category + "/");
         String fileName = target + "." + extendName;
         Files.copy(byteArrayInputStream, rootLocation.resolve(fileName),
                 StandardCopyOption.REPLACE_EXISTING);

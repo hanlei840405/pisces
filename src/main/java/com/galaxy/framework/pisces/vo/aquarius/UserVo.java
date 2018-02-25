@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.util.Collection;
 
 @Setter
 @Getter
@@ -35,10 +34,11 @@ public class UserVo extends BaseVo implements Serializable {
 
     private String headImg;
 
-    private DepartmentVo departmentVo;
+    private String departmentCode;
 
-    private PositionVo positionVo;
+    private String departmentName;
 
-    // 兼职岗位
-    private Collection<PositionVo> positionVos;
+    private String positionCode;
+
+    private String positionName;
 }

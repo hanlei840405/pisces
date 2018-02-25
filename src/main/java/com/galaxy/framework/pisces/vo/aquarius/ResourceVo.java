@@ -16,5 +16,7 @@ public class ResourceVo extends BaseVo implements Serializable {
 
     private String name;
 
-    private ResourceVo resourceVo;
+    private String resourceCode;
+
+    private String resourceName;
 }

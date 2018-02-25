@@ -15,5 +15,5 @@ public class BaseVo implements Serializable {
     private Date created;
     private String modifier;
     private Date modified;
-    private int version = 0;
+    private Integer version;
 }

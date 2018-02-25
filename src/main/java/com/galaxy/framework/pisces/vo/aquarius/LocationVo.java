@@ -18,6 +18,4 @@ public class LocationVo extends BaseVo implements Serializable {
     private String code;
 
     private String name;
-
-    private List<DepartmentVo> departmentVos = new ArrayList<>();
 }

@@ -23,10 +23,12 @@ public class DepartmentVo extends BaseVo implements Serializable {
     private boolean parent;
 
     // 上级部门
-    private DepartmentVo departmentVo;
+    private String departmentCode;
 
-    private LocationVo locationVo;
+    // 上级部门
+    private String departmentName;
 
-    // 本部门下的岗位信息
-    private Collection<PositionVo> positionVos;
+    private String locationCode;
+
+    private String locationName;
 }
